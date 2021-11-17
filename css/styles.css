@@ -26,10 +26,12 @@ button {
   cursor: pointer;
   box-sizing: border-box;
 }
+/* хедер контейнер */
 .container {
-  width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1600px;
+  height: 80px;
+  /* padding-left: 15px;
+  padding-right: 15px; */
   margin: 0 auto;
 }
 body {
@@ -54,6 +56,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 .header-lists {
   list-style: none;
@@ -69,6 +72,13 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.cards-list {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .nav-link {
   color: var(--current-title-color);
@@ -124,7 +134,9 @@ body {
 
 .hero {
   background-color: #2f303a;
-  display: inline-block;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
 .hero-title {
@@ -136,11 +148,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+  /* padding-top: 200px;
+  padding-bottom: 280px;
+  padding-left: 452px;
+  padding-right: 452px; */
 
-  margin-top: 200px;
-  margin-right: 452px;
-  margin-bottom: 280px;
-  margin-left: 452px;
+  width: 696px;
+  height: 120px;
 }
 
 /* Кнопки */
@@ -160,6 +174,8 @@ body {
   border-radius: 4px;
   margin-right: 4px;
   margin-left: 4px;
+  margin-bottom: 0px;
+  margin-top: 30px;
 }
 
 .btn:hover,
@@ -188,13 +204,15 @@ body {
 /* portolio */
 .button-lists {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin-left: 280px;
   margin-right: 280px;
-  margin-bottom: 34px;
   align-items: center;
   border-radius: 4px;
   justify-content: center;
+  padding-right: 8px;
+  margin-bottom: 0px;
 }
 /* Заголовки */
 .heading {
@@ -281,6 +299,9 @@ body {
   position: absolute;
   width: 1170px;
   height: 1360px;
+  /* margin-top: 94px; */
+  align-items: center;
+  justify-content: center;
 }
 /* Footer */
 .footer {
@@ -288,7 +309,7 @@ body {
 }
 .footer-section {
   height: 252px;
-  width: 1600px;
+  /* width: 1600px; */
   padding-top: 60px;
   padding-left: 215px;
   padding-bottom: 60px;
