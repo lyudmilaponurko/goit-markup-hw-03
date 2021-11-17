@@ -9,9 +9,31 @@
   --footer-bg-color: #2f303a;
   --footer-link-color: rgba(255, 255, 255, 0.6);
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
 body {
-  font-family: Roboto, sans-serif;
+  font-family: roboto, sans-serif;
   color: var(--current-text-color);
   background-color: var(--current-white-color);
 }
@@ -22,17 +44,43 @@ body {
 }
 
 /* Навигация */
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.nav {
+  display: flex;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header-lists {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
 .lists {
+  flex-wrap: wrap;
+  display: flex;
   list-style: none;
 }
-
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
 .nav-link {
   color: var(--current-title-color);
+  margin-right: 50px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.nav-link:last-child {
+  margin-right: 50px;
 }
 
 .nav-contacts {
@@ -41,6 +89,7 @@ body {
   font-size: 14px;
   line-height: 1, 14;
   letter-spacing: 2%;
+  margin-left: 50px;
 }
 
 .nav-link:hover,
@@ -64,6 +113,7 @@ body {
 
 .logo-nav {
   color: var(--current-black-color);
+  margin-right: 90px;
 }
 
 .logo-footer {
@@ -74,6 +124,7 @@ body {
 
 .hero {
   background-color: #2f303a;
+  display: inline-block;
 }
 
 .hero-title {
@@ -85,6 +136,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+
+  margin-top: 200px;
+  margin-right: 452px;
+  margin-bottom: 280px;
+  margin-left: 452px;
 }
 
 /* Кнопки */
@@ -102,6 +158,8 @@ body {
 
   border: 0;
   border-radius: 4px;
+  margin-right: 4px;
+  margin-left: 4px;
 }
 
 .btn:hover,
@@ -112,7 +170,6 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 .btn.hero {
   color: var(--current-white-color);
   background-color: var(--accent-color);
@@ -128,7 +185,17 @@ body {
 .btn.hero:hover {
   background-color: var(--hero-btn-accent-color);
 }
-
+/* portolio */
+.button-lists {
+  display: flex;
+  list-style: none;
+  margin-left: 280px;
+  margin-right: 280px;
+  margin-bottom: 34px;
+  align-items: center;
+  border-radius: 4px;
+  justify-content: center;
+}
 /* Заголовки */
 .heading {
   font-weight: 700;
@@ -194,19 +261,51 @@ body {
   letter-spacing: 0.03em;
   color: var(--current-text-color);
 }
-
+/* portolio main section */
+.cards {
+  display: flexbox;
+  list-style: none;
+}
+.main-section {
+  display: flex;
+  width: 1170px;
+  height: 1360px;
+  margin-right: 215px;
+  margin-left: 215px;
+  margin-top: 0px;
+  margin-bottom: 94px;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 1170px;
+  height: 1360px;
+}
 /* Footer */
 .footer {
   background-color: var(--footer-bg-color);
 }
-
+.footer-section {
+  height: 252px;
+  width: 1600px;
+  padding-top: 60px;
+  padding-left: 215px;
+  padding-bottom: 60px;
+  padding-right: 1154px;
+}
 .footer-text {
   color: var(--current-white-color);
   font-style: normal;
   font-size: 16px;
   line-height: 1, 71;
 }
-
+.footer-lists {
+}
+.footer-info {
+  list-style: none;
+  padding-bottom: 9px;
+}
 .footer-link {
   font-style: normal;
   line-height: 1.71;
